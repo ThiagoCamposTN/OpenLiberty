@@ -1,6 +1,6 @@
 extends Node
 
-var items: Dictionary[int, ItemDef]
+var items: Dictionary
 var itemchilds: Array[TDFX]
 var placements: Array[ItemPlacement]
 var collisions: Array[ColFile]

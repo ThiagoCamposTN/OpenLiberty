@@ -1,6 +1,6 @@
 extends Node
 
-var assets: Dictionary[String, DirEntry] = {}
+var assets: Dictionary = {}
 var mutex := Mutex.new()
 
 func _ready() -> void:

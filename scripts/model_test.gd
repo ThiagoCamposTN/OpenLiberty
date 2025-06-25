@@ -32,7 +32,7 @@ func _ld_model(value: float) -> void:
 	var material := geometry.material_list.materials[0] as RWMaterial
 	meshinstance.material_override = material.material
 	if material.is_textured:
-		var texname := material.texture.texture_name.string
+		var texname := material.texture.texture_name
 		for raster in misc.textures:
 			if texname.to_lower() == raster.name:
 				meshinstance.material_override.albedo_texture = ImageTexture.create_from_image(raster.image)

@@ -34,7 +34,7 @@ var mesh: ArrayMesh:
 			return ArrayMesh.new()
 		var morph_t := morph_targets[0]
 		var st := SurfaceTool.new()
-		var surfaces: Dictionary[int, Array] = {}
+		var surfaces: Dictionary = {}
 		# Split tris by their material ID
 		for tri in tris:
 			var mat_id := tri.material_id
